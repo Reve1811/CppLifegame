@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  cpp_lifegame:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cpp_lifegame
+    container_name: cpp_lifegame
+    volumes:
+      - ../:/var/cpp_lifegame
+    stdin_open: true
+    tty: true
+    
